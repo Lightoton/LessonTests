@@ -147,7 +147,7 @@ class StudentRegistryTest {
     }
 
     @Test
-    void isStudentPresent() {
+    void isStudentPresentTest() {
         String email = "Pup@gmail.com";
         boolean isStudentPresent =
                 studentRegistry.getStudents().values().stream().anyMatch(student -> student.getEmail().equals(email));
